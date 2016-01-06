@@ -1,0 +1,118 @@
+/*******************************Calendar Top Navigation*********************************/
+div#calendar{
+  margin:0px auto;
+  padding:0px;
+  width: 506px; padding:32px 7px 10px;
+  background:#7dcdff url(../img/cal_bg.jpg) left top repeat-x;
+  border:1px solid #00237e; border-radius:5px;
+}
+ 
+div#calendar div.box{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:99.5%;
+    height:40px; border:1px solid #349fff; border-bottom:none;
+    background-color:   #c9eaff ;    box-shadow: 0 -3px 0 #fff;  
+}
+ 
+div#calendar div.header{
+    line-height:40px;  
+    vertical-align:middle;
+    position:absolute;
+    left:1%;
+    top:0px;
+    width:98%;
+    height:40px;   
+    text-align:center;
+}
+ 
+div#calendar div.header a.prev,div#calendar div.header a.next{ 
+    position:absolute;
+    top:0px;   
+    height: 17px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+}
+ 
+div#calendar div.header span.title{
+    color:#3399ff;
+    font-size:14px; vertical-align:top;
+}
+div#calendar div.header span.title img{
+width:25px;
+height:auto;
+}
+ 
+div#calendar div.header a.prev{
+    left:30px; background:url(../img/left_round.png); display:block; height:21px; width:21px; text-indent: -10000px; top:10px;
+}
+ 
+div#calendar div.header a.next{
+    right:30px;  background:url(../img/right_round.png); display:block; height:21px; width:21px;  text-indent: -10000px; top:10px;
+}
+div#calendar div.header a img{margin-top:5px;} 
+ 
+ 
+ 
+/*******************************Calendar Content Cells*********************************/
+div#calendar div.box-content{
+    border:1px solid #2698ff ;
+    border-top:none; float:left; box-shadow: 0 3px 0 #fff;
+} 
+ 
+div#calendar ul.label{
+    float:left; width:100%;
+    margin: 0px;
+    padding: 0px;
+    background-color:   #c9eaff ;      
+}
+ 
+div#calendar ul.label li{
+    margin:0px;
+    padding:0px;
+    float:left;
+    list-style-type:none;
+    width: 14.1%;
+    line-height:20px;
+    vertical-align:middle;
+    text-align:center;
+    color:#0069ed;
+    font-size: 10px;
+    background-color: transparent; font-weight:normal;
+}
+ 
+ 
+div#calendar ul.dates{
+    float:left; width:97%; background:#fff; padding:8px 1.5%;
+    margin: 0px;
+	background:#fff;
+}
+ 
+/** overall width = width+padding-right**/
+div#calendar ul.dates li{
+    margin:0px;
+    padding:0px;
+    vertical-align:middle;
+    float:left;
+    list-style-type:none;
+   width:13.8%;
+    height:45px;
+    font-size:25px;
+    color:#000;
+    text-align:left; border:1px solid #67beff;
+	background:url(../img/li_cal_bg.png) left top repeat-x;
+}
+div#calendar ul.dates li:hover{	background:url(../img/lihover_cal.png) left top repeat-x; border:3px solid #ffa973; width:13%; height:41px;}
+div#calendar ul.dates li.mask{background:#5cb8ff url(../img/li_cal_bg.png) left top repeat-x !important;}
+div#calendar ul.dates li a{padding:1px 5px; float:left; color:#000f90;} 
+div#calendar ul.dates li:hover a{padding:0 3px}
+:focus{
+    outline:none;
+}
+ 
+div.clear{
+    clear:both;
+}     
